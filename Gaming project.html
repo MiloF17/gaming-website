@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>Information about gaming in Year 9</title>
+<style>
+body
+{      
+		border :  30px  solid #333533;
+		background-color : #808080;
+}		
+h1
+{
+		color : white;
+		background-color : black;
+		font-family : Accent SF;
+		text-align : center;
+		font-size : 30pt;
+}
+
+h2
+{
+		color : black;
+		font-family : Accent SF;
+		background-color : white;
+		text-align : center;
+		font-size : 25pt;
+}
+p
+{
+		color : white;
+		font-family : Accent SF;
+		text-align : center;
+		font-size : 20pt;
+}
+a
+{
+		float : left;
+		width : 5.5em;
+		text-decoration : none;
+		color : white;
+		background-color : black;
+		padding : 1em 3em;
+		border : 8px solid white;
+		font-family : Jokerman;
+		font-size : 13pt;
+		
+}
+a:hover
+{
+		background-color : white;
+		color : black;
+		font-family : Jokerman;
+		font-size : 15pt;
+		font-weight : bold;
+		width : 5.5em
+}
+</style>
+
+</head>
+<body>
+<h1>Question 1</h1>
+<h2>What platform do they play on?</h2>
+<p>Here are the results.</p>
+
+<div id="piechart" align="center"></div>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript"  align="center">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Platform', 'How many people'],
+  ['PS4', 10],
+  ['Xbox', 15],
+  ['PC', 6],
+  ['Mobile', 9],
+ 
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'What platform 40 Year 9 students play on', 'width':400, 'height':300};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+
+	
+</script>
+
+
+	
+	
+<a href="Gaming project2.html">Question 2</a>
+<a href="Gaming project3.html">Question 3</a>
+<a href="Gaming project4.html">Question 4</a>
+<a href="Gaming project5.html">Question 5</a>
+<a href="Gaming project6.html">Question 6</a>
+<a href="index.html">Question 7</a>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
